@@ -1,0 +1,66 @@
+/* Basic setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, #controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main layout */
+#dashboard {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Map container */
+#map-container {
+    flex: 3;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+#sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Text boxes */
+.info-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#legend {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Tooltip styling */
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+/* Hide tooltip */
+.hidden {
+    display: none;
+}
